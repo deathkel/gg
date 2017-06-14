@@ -703,6 +703,10 @@ func (dc *Context) WordWrap(s string, w float64) []string {
 	return wordWrap(dc, s, w)
 }
 
+func (dc *Context) SetFontHeight(points float64){
+	dc.fontHeight = points * 72 / 96
+}
+
 // Transformation Matrix Operations
 
 // Identity resets the current transformation matrix to the identity matrix.
